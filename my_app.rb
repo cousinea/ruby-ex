@@ -1,7 +1,6 @@
 class MyApp
 	def call env
-	    [200, {"Content-Type" => "text/html"}, [
-[200, { "Content-Type" => "text/html" }, [<<WELCOME_CONTENTS
+	    [200, {"Content-Type" => "text/html"}, [<<WELCOME_CONTENTS
 <!doctype html>
 <html lang="en">
 <head>
@@ -278,6 +277,6 @@ $ git push</pre>
 </body>
 </html>
 WELCOME_CONTENTS
-	    ]]]
+	    ]]
 	end
 end
