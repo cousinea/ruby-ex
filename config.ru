@@ -18,3 +18,7 @@ map '/' do
   end
   run welcome
 end
+
+map '/howdy' do
+  run MyApp.new
+end
