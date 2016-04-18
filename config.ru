@@ -1,5 +1,5 @@
 require 'rack/lobster'
-require ./my_app.rb'
+#require ./my_app.rb'
 
 map '/health' do
   health = proc do |env|
@@ -13,5 +13,8 @@ map '/lobster' do
 end
 
 map '/' do
-  run MyApp.new
+  welcome = proc do |env|
+  	 [200, {"Content-Type" => "text/html"}, ["Hello Rack Participants"]]
+  end
+  run welcome
 end
