@@ -1,5 +1,5 @@
 require 'rack/lobster'
-require ./my_app'
+require ./my_app.rb'
 
 map '/health' do
   health = proc do |env|
