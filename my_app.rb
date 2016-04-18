@@ -278,6 +278,6 @@ $ git push</pre>
 </body>
 </html>
 WELCOME_CONTENTS
-	    ]]
+	    ]]]
 	end
 end
