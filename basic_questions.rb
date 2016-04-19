@@ -1,6 +1,6 @@
-class FrontPage
+class BasicQuestions
 	def call env
-	    [200, {"Content-Type" => "text/html"}, [<<MAIN_PAGE_CONTENTS
+	    [200, {"Content-Type" => "text/html"}, [<<BASIC_QUESTIONS_CONTENTS
 <!doctype html>
 <html lang="en">
 <head>
@@ -203,6 +203,51 @@ pre {
   font-family: Menlo,Monaco,"Liberation Mono",Consolas,monospace !important;
 }
 
+.answers li { 
+list-style: upper-alpha; 
+} 
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+} 
+
+#results { 
+background: #dddada; 
+color: 000000; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+}
+
+#results:hover { 
+background: #3d91b8; 
+color: #ffffff; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+} 
+
+#categorylist { 
+margin-top: 6px; 
+display: none; 
+} 
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 { 
+display: none; 
+}
+
+#closing {
+display: none;
+font-style: italic;
+}
+
+
+
 </style>
 
 </head>
@@ -210,67 +255,47 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>Welcome to a demo application for OpenShift</h1>
+            <h1>Some Basic History Questions</h1>
           </hgroup>
 
 
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
-              <h2>Basic Functions</h2>
+              <h2>Question #1</h2>
                 <p>
-                  There are some basic questions available at the <a href="./basic_questions">basic questions page</a>.
+                  The University has a rich history of leadership.  Many of these leaders are commemorated in the names of buildings on campus.  The following question refers to the source of one of those names.
+                </p>
+                
+                <p class="question">  
+                  Who was the first President of the University of Michigan?
                 </p>
 
-<ol>
-  <li>From the Web Console homepage, navigate to your project</li>
-  <li>Click on Browse &gt; Builds</li>
-  <li>From the view for your Build click on the button to copy your GitHub webhook</li>
-  <li>Navigate to your repository on GitHub and click on repository settings &gt; webhooks</li>
-  <li>Paste your webhook URL provided by OpenShift &mdash; that's it!</li>
-</ol>
-<p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
-<p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
-                <h3>Working in your local Git repository</h3>
-                <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
+				<ul class="answers">
+				<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Erastus Haven</label><br/>
+				<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Henry Frieze</label><br/>
+				<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Rev. John Monteith</label><br/>
+				<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Henry Tappan</label><br/>
+				</ul>
+				
+				<div id="results">
+					Submit
+				</div>
+				
+				<div id="category1">
+					<p>
+						<strong>Question 1:</strong> The correct answer is the 					<strong>Henry Tappan</strong>.
+					</p>
+				</div>
+			</section>
+	     </section>
+       </div>
 
-<p>After pushing changes, you'll need to manually trigger a build if you did not setup a webhook as described above.</p>
-      </section>
-          </section>
-          <section class="col-xs-12 col-sm-6 col-md-6">
-
-                <h2>Basic workflow</h2>
-                
-                <h3>Local Changes</h3>
-                <p>The basic idea is that a developer would still follow her same basic procedure of making changes locally.  As this is a rack application I used <a href="http://rubylearning.com/blog/2013/04/02/whats-rack/">rackup</a> to test my application locally. </p>
-
-                <h3>Command Line</h3>
-                <p>With the <a href="http://docs.openshift.org/latest/cli_reference/overview.html">OpenShift command line interface</a> (CLI), you can create applications and manage projects from a terminal.</p>
-
-<pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
-# Within your project directory
-# Commit your changes and push to OpenShift
-$ git commit -a -m 'Some commit message'
-$ git push
-$ oc logs &lt;your pod name goes here&gt;
-# if your pod is crashing frequently, append a -p after the pod name to get the logs.</pre>
-                
-                <h3>Web Console</h3>
-                <p>You can use the Web Console to view the state of your application components and launch new builds.</p>
-
-
-          </section>
-        </div>
-
-        <footer>
-          <div class="logo"><a href="https://www.openshift.com/"></a></div>
-        </footer>
 </section>
-
 
 </body>
 </html>
-MAIN_PAGE_CONTENTS
+BASIC_QUESTIONS_CONTENTS
 	    ]]
 	end
 end
