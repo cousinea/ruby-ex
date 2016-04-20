@@ -291,7 +291,7 @@ font-style: italic;
 	     </section>
        </div>
        
-       
+<!--       
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
@@ -323,6 +323,7 @@ font-style: italic;
 			</section>
 	     </section>
        </div>
+--!>
 
 </section>
 
