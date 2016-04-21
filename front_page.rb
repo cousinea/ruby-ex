@@ -247,8 +247,9 @@ pre {
                 <h3>Command Line</h3>
                 <p>With the <a href="http://docs.openshift.org/latest/cli_reference/overview.html">OpenShift command line interface</a> (CLI), you can create applications and manage projects from a terminal.</p>
 
-<pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
-# Within your project directory
+<pre># Create a project and application
+$ oc new-project cop-cloud
+$ oc new-app openshift/ruby-20-centos7~https://github.com/chriskretler/ruby-ex
 # Commit your changes and push to OpenShift
 $ git commit -a -m 'Some commit message'
 $ git push

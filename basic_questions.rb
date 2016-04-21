@@ -291,7 +291,7 @@ font-style: italic;
 	     </section>
        </div>
        
-<!-- --!>     
+<!--   --!> 
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
@@ -326,6 +326,20 @@ font-style: italic;
 --!>
 
 </section>
+
+<section class='container'>
+        <div class="row">
+          <section class='col-xs-12 col-sm-6 col-md-6'>
+            <section>
+                
+                <footer>  
+                  <a href="./">Return to the main page</a>
+                </footer>
+
+			</section>
+	     </section>
+       </div>
+</section>			
 
 </body>
 </html>
