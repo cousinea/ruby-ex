@@ -291,7 +291,7 @@ font-style: italic;
 	     </section>
        </div>
        
-<!--  --!> 
+<!--
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
@@ -302,40 +302,6 @@ font-style: italic;
                 
                 <p class="question">  
                   Who was the second President of the University of Michigan?
-                </p>
-
-				<ul class="answers">
-				<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Erastus Haven</label><br/>
-				<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Henry Frieze</label><br/>
-				<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Rev. John Monteith</label><br/>
-				<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Henry Tappan</label><br/>
-				</ul>
-				
-				<div id="results">
-					Submit
-				</div>
-				
-				<div id="category1">
-					<p>
-						<strong>Question 2:</strong> The correct answer is the 					<strong>Erastus Haven</strong>.
-					</p>
-				</div>
-			</section>
-	     </section>
-       </div>
-<!--  --!>
-
-<!--  --!>
-        <div class="row">
-          <section class='col-xs-12 col-sm-6 col-md-6'>
-            <section>
-              <h2>Question #3</h2>
-                <p>
-                  The University has a rich history of leadership.  Many of these leaders are commemorated in the names of buildings on campus.  The following question refers to the source of one of those names.
-                </p>
-                
-                <p class="question">  
-                  Who was the third President of the University of Michigan?
                 </p>
 
 				<ul class="answers">
