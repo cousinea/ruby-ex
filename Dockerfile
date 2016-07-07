@@ -1,5 +1,5 @@
 #FROM alpine:3.4
-FROM ubuntu:16.04
+FROM ubuntu:latest
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
