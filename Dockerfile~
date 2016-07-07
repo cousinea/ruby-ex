@@ -1,15 +1,17 @@
+#FROM ubuntu:16.04
 FROM alpine:3.3
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
-# Install ruby
+# execute this separate to allow caching
+#RUN apt-get update
 RUN apk add --no-cache ruby ruby-rack
+#RUN apt-get install -y ruby ruby-rack
+
+EXPOSE 9292
 
 # create place for app to run from
 WORKDIR /app/
 COPY . /app/
 
-# expose the port on which the app will run.
-EXPOSE 8080
-
-CMD rackup --host 0.0.0.0 -p 8080
+CMD rackup --host 0.0.0.0
