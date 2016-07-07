@@ -7,11 +7,10 @@ RUN apt-get update
 
 RUN apt-get install -y ruby ruby-rack
 
-EXPOSE 8080
+EXPOSE 9292
 
 # create place for app to run from
 WORKDIR /app/
 COPY . /app/
 
-CMD rackup -p 8080
-#CMD /bin/bash
+CMD rackup --host 0.0.0.0
