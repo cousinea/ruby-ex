@@ -1,5 +1,5 @@
 require 'rack/lobster'
-require './front_page'
+require './front_page1'
 require './basic_questions'
 
 map '/health' do
