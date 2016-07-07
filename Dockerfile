@@ -1,9 +1,12 @@
-FROM alpine:3.3
+#FROM alpine:3.4
+FROM ubuntu:16.04
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
 # Install ruby
-RUN apk add --no-cache ruby ruby-rack
+#RUN apk add --no-cache ruby ruby-rack
+RUN apt-get update \ 
+	&& apt-get install -y ruby ruby-rack
 
 # create place for app to run from
 WORKDIR /app/
