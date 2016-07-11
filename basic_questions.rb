@@ -1,4 +1,7 @@
 class BasicQuestions
+
+	#ENV["PROPERTIES"] = 'howdy'
+
 	def call env
 	    [200, {"Content-Type" => "text/html"}, [<<BASIC_QUESTIONS_CONTENTS
 <!doctype html>
@@ -291,7 +294,7 @@ font-style: italic;
 	     </section>
        </div>
        
-<!--
+<!--  --!>
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
@@ -332,6 +335,10 @@ font-style: italic;
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
+            
+            	<div id="envVars">
+            		The variable is: "#{ENV["PROPERTIES"]}"
+            	</div>
                 
                 <footer>  
                   <a href="./">Return to the main page</a>
