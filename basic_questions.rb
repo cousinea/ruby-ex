@@ -1,7 +1,5 @@
 class BasicQuestions
 
-	#ENV["PROPERTIES"] = 'howdy'
-
 	def call env
 	    [200, {"Content-Type" => "text/html"}, [<<BASIC_QUESTIONS_CONTENTS
 <!doctype html>
@@ -338,6 +336,7 @@ font-style: italic;
             
             	<div id="envVars">
             		The variable is: "#{ENV["PROPERTIES"]}"
+            		Another variable is: "#{ENV["prop1name"]}"
             	</div>
                 
                 <footer>  
