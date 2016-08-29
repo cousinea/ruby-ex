@@ -256,7 +256,7 @@ font-style: italic;
 
 <section class='container'>
           <hgroup>
-            <h1>Some Basic History Questions</h1>
+            <h1>Some Basic U-M History Questions</h1>
           </hgroup>
 
 
