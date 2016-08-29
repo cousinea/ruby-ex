@@ -210,7 +210,7 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>Welcome to Chris's Demo Application</h1>
+            <h1>Welcome to Jeff's Demo Application</h1>
           </hgroup>
 
 
