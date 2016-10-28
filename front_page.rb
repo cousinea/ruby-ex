@@ -234,6 +234,8 @@ pre {
                 <h3>Working in your local Git repository</h3>
                 <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
 
+<p>When running in OpenShift, the pod name will display here: #{ENV["HOSTNAME"]}</p>
+
 <p>After pushing changes, you'll need to manually trigger a build if you did not setup a webhook as described above.</p>
       </section>
           </section>
